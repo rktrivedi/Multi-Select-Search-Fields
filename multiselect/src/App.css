@@ -1,0 +1,42 @@
+.user-search-container {
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+.user-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.user-input input {
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+.user-input input:focus {
+  outline: none;
+}
+.suggestion-list {
+  max-height: 300px;
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+.suggestion-list li:hover {
+  background-color: #ccc;
+}
+.suggestion-list li img {
+  height: 20px;
+}
